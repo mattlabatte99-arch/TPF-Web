@@ -1,5 +1,6 @@
 /*Habillement des éléments de la page.*/
 * {
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     list-style: none;
     color: #FFEEDB;
