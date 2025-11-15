@@ -79,9 +79,10 @@ footer {
     text-align: center;
     color: #FFEEDB;
     /*-----------------------------*/
-    gap: 30px;
+    gap: 10px;
 }
 
+/*Distance entre les titres en h2 avec les informations des contacts.*/
 .contact h2 {
     font-size: 1.3rem;
     padding-bottom: 10px;
@@ -97,11 +98,12 @@ footer {
     width: 200px;
 }
 
+/*Dispostion des images des réseaux sociaux.*/
 .réseaux-sociaux {
     display: flex;
     flex-direction: row;
     /*-------------------------*/
-    padding-top: 70px;
+    padding-top: 20px;
     margin: auto;
     gap: 30px;
 }
