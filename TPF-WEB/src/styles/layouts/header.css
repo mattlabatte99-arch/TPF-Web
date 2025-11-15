@@ -6,6 +6,7 @@ header {
     /*------------------------*/
     width: 100%;
     z-index: 3;
+    margin-bottom: 200px;
 }
 
 /*Disposition des éléments de l'en-tête.*/

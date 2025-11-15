@@ -3,3 +3,32 @@
     font-family: "Home Christmas";
     src: url("src/fonts/Home Christmas.otf");
 }
+
+.Texte {
+    display: flex;
+    flex-direction: column;
+
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.Texte h1 {
+    font-size: 10rem;
+    margin: 50px 0;
+}
+
+.Texte h2 {
+    font-size: 8rem;
+    margin: 0;
+}
+
+.bouton {
+    background-color: #FFEEDB;
+    color: #660000;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    height: 4rem;
+    width: 9rem;
+}
