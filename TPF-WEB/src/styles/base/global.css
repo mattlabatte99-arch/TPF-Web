@@ -21,8 +21,8 @@ body {
 
 /*Grandeur du label courriel et espacement de l'intérieur.*/
 label {
-    font-size: 1.4rem;
-    margin: auto;
+  font-size: 1.4rem;
+  margin: auto;
 }
 
 @media screen and (width <= 1000px){
