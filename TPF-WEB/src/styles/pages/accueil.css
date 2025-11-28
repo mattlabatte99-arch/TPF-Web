@@ -7,58 +7,155 @@
 .Texte {
     display: flex;
     flex-direction: column;
-
     align-content: center;
     align-items: center;
     text-align: center;
+    /*---------------------------------*/
     padding-bottom: 30px;
 }
 
+/*Grosseur du texte 24 faits sur noël et sa position sur le site web.*/
 .Texte h1 {
+    position: relative;
     font-size: 10rem;
-    margin: 50px 0;
+    z-index: 1;
 }
 
+/*Grosseur du texte Joyeux noël sur le site web.*/
 .Texte h2 {
     font-size: 8rem;
     margin: 0;
+    margin-bottom: 50px;
+}
+
+/*Image du cadeau de gauche.*/
+.cadeau-gauche {
+    position: absolute;
+    width: 350px; /*Largeur de l'image du cadeau gauche sur le site web.
+    Hauteur non nécessaire, puisqu'elle est de la même grandeur que la largeur.*/
+    top: 80px; /*Positionnement de l'image dans le haut du site web.*/
+    transform: rotate(25deg); /*Degré de rotation de l'image.*/
+    left: 5vh; /*Positionnement vers la gauche.*/
+    z-index: 0;
+}
+
+
+.cadeau-gauche:hover {
+    position: absolute;
+    z-index: 1;
+}
+
+/*Image du cadeau de droite.*/
+.cadeau-droite {
+    position: absolute;
+    height: 250px; /*Largeur de l'image du cadeau gauche sur le site web.
+    Hauteur non nécessaire, puisqu'elle est de la même grandeur que la largeur.*/
+    top: 150px; /*Positionnement de l'image dans le haut du site web.*/
+    transform: rotate(-25deg); /*Degré de rotation de l'image.*/
+    right: 10vw; /*Positionnement vers la droite.*/
+    z-index: 0;
+}
+
+.cadeau-droite:hover {
+    position: absolute;
+    z-index: 1;
+}
+
+/*Image du cadeau en bas.*/
+.gr-cadeaux {
+    position: absolute;
+    width: 400px; /*Largeur de l'image du cadeau gauche sur le site web.
+    Hauteur non nécessaire, puisqu'elle est de la même grandeur que la largeur.*/
+    bottom: 150px; /*Positionnement de l'image dans le bas du site web.*/
+    left: 250px; /*Positionnement vers la gauche.*/
+    z-index: -1;
+}
+
+/*Position de l'image de guirlande sur le site web.*/
+.guirlande {
+    position: absolute;
+    width: 100%;
+    bottom: -500px;
+    z-index: -2;
+    
 }
 
 .bouton {
     background-color: #FFEEDB;
     color: #660000;
+    /*---------------------------------*/
     border-radius: 10px;
     font-size: 1.3rem;
     height: 4rem;
     width: 9rem;
+    margin-bottom: 500px;
 }
 
-.cadeau-g {
+@media screen and (width <= 800px) {
+
+    .Texte {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        width: 300px;
+        /*---------------------------------*/
+        padding-bottom: 30px;
+    }
+
+    .Texte h1 {
+        position: relative;
+        font-size: 5rem;
+        z-index: 1;
+    }
+
+/*Grosseur du texte Joyeux noël sur le site web.*/
+    .Texte h2 {
+        font-size: 3rem;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    .cadeau-gauche {
+        position: absolute;
+        max-width: 150px; /*Largeur de l'image du cadeau gauche sur le site web.
+        Hauteur non nécessaire, puisqu'elle est de la même grandeur que la largeur.*/
+        top: 80px; /*Positionnement de l'image dans le haut du site web.*/
+        transform: rotate(25deg); /*Degré de rotation de l'image.*/
+        left: 5vh; /*Positionnement vers la gauche.*/
+        z-index: 0;
+    }
+
+
+.cadeau-gauche:hover {
     position: absolute;
-    width: 350px; /*Largeur de l'image du cadeau gauche sur le site web.
-    Hauteur non nécessaire, puisqu'elle est de la même grandeur que la largeur.*/
-    top: 40px; /*Positionnement de l'image dans le haut du site web.*/
-    transform: rotate(25deg); /*Degré de rotation de l'image.*/
-    left: 30px; /*Positionnement vers la gauche.*/
-    z-index: -1;
+    z-index: 1;
 }
 
-.cadeau-d {
+/*Image du cadeau de droite.*/
+.cadeau-droite {
     position: absolute;
-    height: 250px; /*Largeur de l'image du cadeau gauche sur le site web.
+    height: 150px; /*Largeur de l'image du cadeau gauche sur le site web.
     Hauteur non nécessaire, puisqu'elle est de la même grandeur que la largeur.*/
-    top: 80px; /*Positionnement de l'image dans le haut du site web.*/
+    top: 150px; /*Positionnement de l'image dans le haut du site web.*/
     transform: rotate(-25deg); /*Degré de rotation de l'image.*/
-    right: 300px; /*Positionnement vers la droite.*/
-    z-index: -1;
+    right: 10vw; /*Positionnement vers la droite.*/
+    z-index: 0;
 }
 
-.gr-cadeaux {
+.cadeau-droite:hover {
     position: absolute;
-    width: 400px; /*Largeur de l'image du cadeau gauche sur le site web.
-    Hauteur non nécessaire, puisqu'elle est de la même grandeur que la largeur.*/
-    bottom: 200px; /*Positionnement de l'image dans le bas du site web.*/
-    left: 300px; /*Positionnement vers la gauche.*/
-    z-index: -1;
+    z-index: 1;
 }
 
+/*Image du cadeau en bas.*/
+.gr-cadeaux {
+        position: absolute;
+        width: 200px; /*Largeur de l'image du cadeau gauche sur le site web.
+        Hauteur non nécessaire, puisqu'elle est de la même grandeur que la largeur.*/
+        bottom: 250px; /*Positionnement de l'image dans le bas du site web.*/
+        left: 10vh; /*Positionnement vers la gauche.*/
+        z-index: -1;
+    }
+}
