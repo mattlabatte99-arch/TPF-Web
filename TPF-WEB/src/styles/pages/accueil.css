@@ -162,3 +162,13 @@
         margin-bottom: 100px; /*Espacement entre le bouton et le pied de bas de page sur le site.*/
     }
 }
+
+#snow {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* la neige ne bloque pas les clics */
+    z-index: 2;        /* passe devant tout */
+}
