@@ -1,6 +1,6 @@
 footer {
     background-color: #36AB76;
-    width: 100vW;
+    width: 100vw;
     height: fit-content;
 }
 
@@ -119,25 +119,25 @@ footer {
 
     /*Taille des fonts dans la section courriel et alignement des contenues.*/
     .email {
-        font-size: 1.1rem;
-        height: auto;
-        align-items: center;
+        display: flex;
+        align-items: center; /*Aligne les éléments à la même hauteur.*/
     }
 
     /*Grandeur de la barre de saisie de texte.*/
     .champ-texte {
-        width: 200px;
+        width: 150px; /*Largeur du champ de saisie de texte.*/
         height: 20px;
     }
 
     /*Grandeur du bouton envoyer.*/
     .bouton-envoyer {
-        width: fit-content;
+        width: 70px;
         height: 27px;
-        font-size: 1rem;
-        border-radius: 5px;
-        border-width: 2px;
-        padding: 0 20px;
+        font-size: 0.8rem;
+        border-radius: 5px; /*Rondeur du bouton.*/
+        border-width: 2px; /*Largeur de bordure.*/
+        padding: 0 5px; /*Espacement dans le bouton.*/
+        margin-right: 5px; /*espacement vers la droite.*/
     }
 
     /*Disposition des moyens de contact en colonne.*/
