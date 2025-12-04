@@ -26,6 +26,7 @@
     font-size: 8rem;
     margin: 0;
     margin-bottom: 50px;
+    z-index: 1;
 }
 
 /*Image du cadeau de gauche.*/
@@ -69,8 +70,7 @@
     position: absolute;
     width: 100%;
     bottom: -500px;
-    z-index: -2;
-    
+    z-index: -2; 
 }
 
 .bouton {
@@ -130,7 +130,7 @@
         Hauteur non nécessaire, puisqu'elle est de la même grandeur que la largeur.*/
         top: 150px; /*Positionnement de l'image dans le haut du site web.*/
         transform: rotate(-25deg); /*Degré de rotation de l'image.*/
-        right: -10vw; /*Positionnement vers la droite.*/
+        right: 10vw; /*Positionnement vers la droite.*/
         z-index: 0;
     }
 
@@ -142,10 +142,28 @@
 /*Image du cadeau en bas.*/
     .gr-cadeaux {
         position: absolute;
-        width: 200px; /*Largeur de l'image du cadeau gauche sur le site web.
+        width: 100px; /*Largeur de l'image du cadeau gauche sur le site web.
         Hauteur non nécessaire, puisqu'elle est de la même grandeur que la largeur.*/
-        bottom: 350px; /*Positionnement de l'image dans le bas du site web.*/
-        left: 10vh; /*Positionnement vers la gauche.*/
+        bottom: 270px; /*Positionnement de l'image dans le bas du site web.*/
+        left: 1vh; /*Positionnement vers la gauche.*/
         z-index: -1;
+    }
+
+        .bouton {
+            background-color: #FFEEDB;
+            color: #660000;
+            /*---------------------------------*/
+            border-radius: 10px;
+            font-size: 1.3rem;
+            height: 4rem;
+            width: 9rem;
+            margin-bottom: 100px;
+        }
+
+    .guirlande {
+        position: absolute;
+        width: 100%;
+        bottom: 100px;
+        z-index: -2; 
     }
 }

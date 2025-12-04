@@ -18,16 +18,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
 
-
-gsap.to(".titre", {
-    scale: 1.03,
-    duration: 1,
-    ease: "ease.inOut",
-    repeat: -1,
-    yoyo: true
-
-});
-
 gsap.to(".titre", {
     scrollTrigger: {
         trigger: '.titre',
