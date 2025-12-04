@@ -7,20 +7,23 @@ import gsap from 'gsap'
 //Importation du plugin scrolltrigger.
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+//Fait par Jorenso.
 // Sélection et interaction avec le bouton menu burger
 const menuBurger = document.querySelector(".menu-burger")
 const navLinks = document.querySelector(".nav-links")
 menuBurger.addEventListener('click', () =>
     navLinks.classList.toggle('mobile-menu'));
 
-// Fonction pour l'interaction avec le bouton de l'hero.
+// Fonction pour l'interaction avec le bouton de la page d'accueil.
 const button = document.getElementById('bouton-nöel'); //Sélectionne le bouton par son ID.
 
 button.addEventListener('click', function () { // Ajout d'un écouteur d'événement.
     window.location.href = 'Page2.html'; //Redirige vers une autre page du site.
 });
 
-//Importation du plugin scrollTrigger pour l'animation de texte de Hero
+//Fait par Jorenso fin.
+
+//Importation du plugin scrollTrigger pour l'animation des titres de la page.
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -41,6 +44,7 @@ gsap.to(".titre", {
     opacity: 0,
 });
 
+//Fait par Jorenso.
 //Animation en translation verticale en boucle de l'image du cadeau de gauche.
 gsap.to(".cadeau-gauche", {
     y: 50,
@@ -136,5 +140,4 @@ window.addEventListener("resize", () => {
     canevas.width = window.innerWidth;
     canevas.height = window.innerHeight;
 });
-
-
+//Fait par Jorenso fin.
