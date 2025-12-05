@@ -13,13 +13,11 @@
   <!--Header de la page html-->
   <header>
     <nav class="navbar">
-      <a href="" class="logo"><img src="/logo.png"></a>
+      <a href="accueil" class="logo"><img src="/logo.png"></a>
       <div class="nav-links">
         <ul>
-          <li><a href="">Accueil</a></li>
-          <li><a href="">Informations</a></li>
-          <li><a href="">Info pertinents</a></li>
-          <li><a href="">À propos</a></li>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="Page2.html">Informations</a></li>
         </ul>
       </div>
 
@@ -27,19 +25,18 @@
       <button class="menu-burger">
         <img src="/Menu-burger.png" alt="menu burger en blanc." class="menu-burger">
       </button>
-
     </nav>
   </header>
 
   <canvas id="snow"></canvas> <!--Canvas pour l'affichage des flocons de neiges.-->
 
   <!--Section de la page d'accueil.-->
-  <main>
+  <main id="accueil">
     <section class="rouge"> <!--Section du texte et des images du site web.-->
       <div class="Texte"> <!--Classe des titre h1 h2 de la page d'accueil.-->
         <h1 class="titre">24 faits sur Noël</h1> <!--Titre h1 de la page d'accueil.-->
         <h2 class="titre">Joyeux Noël!</h2> <!--Titre h2 de la page d'accueil.-->
-        <img src="/Cadeau.png" alt="Paquet cadeau rouge" class="cadeau-gauche"> <!--Image du paquet cadeau de gauche.-->
+        <img src="/Cadeau.png" id="page-accueil" alt="Paquet cadeau rouge" class="cadeau-gauche"> <!--Image du paquet cadeau de gauche.-->
         <img src="/Cadeau.png" alt="Paquet cadeau rouge" class="cadeau-droite"> <!--Image de paquet cadeau de droite.-->
         <img src="/Groupe-cadeaux.png" alt="un groupe de 3 cadeau de couleur or, rouge et argenté" class="gr-cadeaux">
         <!--Image du groupe de cadeaux en dessous des titres.-->
