@@ -1,5 +1,6 @@
 {
   "name": "tpf-web",
+  "homepage": "https://nen12.github.io/website/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
